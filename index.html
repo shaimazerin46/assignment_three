@@ -34,6 +34,10 @@
               fontFamily: {
                 'manrope': ["Manrope", 'sans-serif'],
               },
+
+              backgroundImage: {
+                'paper-back': "url('/assets/bg.jpg')"
+              }
               
             }
           }
@@ -202,7 +206,7 @@
 
             <div class="container mx-auto">
                 <div class="text-center space-y-5">
-                    <span class="px-5 py-2 bg-[#f4f4f4] rounded-3xl text-base font-bold">
+                    <span class="px-5 py-2 bg-green-light rounded-3xl text-base font-bold">
                         <i class="fa-solid fa-arrow-right"></i>
                         Explore our Latest works
                     </span>
@@ -249,6 +253,46 @@
             </div>
 
            </section>
+           <!-- latest portfolio end -->
+
+           <!-- Discuss section start -->
+            <section class="lg:py-28 p-10 bg-paper-back bg-no-repeat bg-cover bg-center">
+                <div class="container mx-auto space-y-12">
+                     <div class="text-center space-y-5">
+                    <span class="px-5 py-2 bg-green-light rounded-3xl text-base font-bold">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Let’s Connect
+                    </span>
+                    <h3 class="font-bold text-4xl">Let’s Discuss Next Project</h3>
+                    <p class="text-dark-2 font-base max-w-2xl mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+                <!-- contact form div -->
+                 <div class="max-w-4xl mx-auto border lg:mt-">
+
+                    <div class="lg:flex justify-between w-[100%]">
+                        <input type="text" placeholder="First Name*"  class=" lg:w-[48%] h-[64px] rounded-[64px] p-5 w-full mb-6 lg:mb-0">
+                     <input type="text" placeholder="Last Name*" class=" lg:w-[48%] h-[64px] rounded-[64px] p-5 w-full">
+                    </div>
+
+                    <br>
+
+                      <div class="lg:flex justify-between w-[100%]">
+                        <input type="text" placeholder="Phone Number*"  class=" lg:w-[48%] h-[64px] rounded-[64px] p-5 lg:inline block w-[100%] mb-6 lg:mb-0">
+                     <input type="text" placeholder="Email Number*" class="lg:w-[48%] h-[64px] rounded-[64px] p-5 w-[100%]">
+                    </div>
+
+                    <br>
+
+                    <textarea name="" id="" class="w-[100%] h-[200px] rounded-3xl p-5 resize-none mb-5"></textarea>
+
+                    <button class="btn bg-green-primary font-bold text-xl rounded-3xl border-none w-full">
+                        Send Mail
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-white bg-black rounded-full"></i>
+                    </button>
+                 </div>
+                </div>
+            </section>
 
 
     </main>
