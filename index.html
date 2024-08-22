@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batch 10 Assignment 3</title>
+
+    <!-- Daisy UI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome Link -->
+    <script src="https://kit.fontawesome.com/2b9f8771db.js" crossorigin="anonymous"></script>
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- customized tailwind config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'dark-1': '#212121',
+                'dark-2': '#494949',
+                'dark-3': '#737373',
+                'green-primary': '#ABEF5F',
+                'green-secondary': 'rgba(171, 239, 95, 0.5)',
+                'green-light': 'rgba(171, 239, 95, 0.2)',
+              },
+              fontFamily: {
+                'manrope': ["Manrope", 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+
+
 </head>
-<body>
-    
+
+<body class="font-manrope text-dark-1">
+
+    <header class=" bg-gradient-to-b from-[#f4f4f4] to-white">
+    <div class="container mx-auto lg:px-0 px-5 
+   ">
+
+         <!-- navbar starts -->
+        <nav class="py-4 ">
+            <div class="navbar bg-base-100 bg-transparent">
+                <div class="navbar-start">
+                 
+                  
+                    <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black bg-green-primary rounded-full mr-2"></i>
+                  <a class="font-extrabold text-3xl">
+                    Rinterio
+                </a>
+                  </div>
+                  
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-dark-3">
+                    <li><a>Home</a></li>
+                    <li>
+                      <a href="">Services</a>
+                    </li>
+                    <li><a>Portfolio</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-3 hidden lg:inline-flex ">
+                    <i class="fa-solid fa-magnifying-glass p-2 border bg-white rounded-full text-dark-3"></i>
+                    <i class="fa-solid fa-cart-shopping p-2 border bg-white rounded-full text-dark-3"></i>
+                  <a class="btn bg-green-primary font-bold text-xl rounded-3xl">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-white bg-black rounded-full"></i>
+                </a>
+                </div>
+                <i class="fa-solid fa-bars lg:hidden ml-auto border bg-white rounded-full text-dark-3 p-3"></i>
+              </div>
+        </nav>
+    </div>
+
+       
+        
+    </header>
+
 </body>
+
 </html>
